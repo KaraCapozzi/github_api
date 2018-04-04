@@ -5,9 +5,9 @@ class ReposController < ApplicationController
     parsed_response = JSON.parse(response.body)
     @repos = parsed_response['items']
 
-    response_contributors = HTTParty.get('https://api.github.com/repos/ruby/ruby/contributors?q=contributions&order=desc')
-    parsed_response_contributors = JSON.parse(response_contributors.body)
-    @contributors = response_contributors[0]['login']
+    # response_contributors = HTTParty.get('https://api.github.com/repos/scala/scala/contributors?q=contributions&order=desc')
+    # parsed_response_contributors = JSON.parse(response_contributors.body)
+    # @contributors = parsed_response_contributors
 
   end
 

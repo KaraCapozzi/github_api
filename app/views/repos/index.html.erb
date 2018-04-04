@@ -3,14 +3,13 @@
   <% @repos.each_with_index do |r, i| %>
   <h2> <%= "#{i + 1}.  "%> Name: <%= r['name'] %> </h2>
   <h3>Stars: <%= r['stargazers_count'] %> <h3>
-  <h3>Top Contributor: <%= @contributors %> </h3>
-  <span> _____________________________________________________________________________________________________________________________________________________________________________________</span>
+
+
+
+  <h3>Top Contributor: <%= r['contributors_url'] %> </h3>
+
+
+
+
+  <span> _______________________________________________________________________________________________________________________________________________________________________________________________</span>
   <% end %>
-
-<br>
-
-<h5>Directions</h5>
-Build a single page web app that uses the Github REST api
-https://developer.github.com/v3/ to display a list of the 100 most starred Github repositories, as well as their top contributor.
-
-<br>

@@ -16,6 +16,7 @@
 
 * {
   font-family: 'Lato', sans-serif;
+  font-weight: lighter;
 }
 
 h1 {
@@ -31,4 +32,12 @@ h2, h3 {
 span {
   text-align: center;
   color: lightgrey;
+}
+
+@media (max-width: 800px) {
+
+  * {
+    background: lightpink;
+  }
+
 }
