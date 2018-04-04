@@ -1,12 +1,10 @@
 <h1>100 Starred Repos</h1>
-<h5>Top contributer of each repo included</h5>
 
-<h6>Display JSON here</h6>
-
-  <% @repos.each do |r| %>
-  <h2>name: <%= r['name'] %> </h2>
-  <h3>stars: <%= r['stargazers_count'] %> <h3>
-
+  <% @repos.each_with_index do |r, i| %>
+  <h2> <%= "#{i + 1}.  "%> Name: <%= r['name'] %> </h2>
+  <h3>Stars: <%= r['stargazers_count'] %> <h3>
+  <h3>Top Contributor: <%= @contributors %> </h3>
+  <span> _____________________________________________________________________________________________________________________________________________________________________________________</span>
   <% end %>
 
 <br>

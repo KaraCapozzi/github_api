@@ -13,3 +13,22 @@
  *= require_tree .
  *= require_self
  */
+
+* {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: blue;
+  font-style: helvetica;
+}
+
+h2, h3 {
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  color: lightgrey;
+}
