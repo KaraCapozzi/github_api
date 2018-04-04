@@ -1,12 +1,14 @@
 <h1>100 Starred Repos</h1>
 <h5>Top contributer of each repo included</h5>
 
-
 <h6>Display JSON here</h6>
-<%= @response.body %>
 
+  <% @repos.each do |r| %>
+  <h2>name: <%= r['name'] %> </h2>
+  <h3>stars: <%= r['stargazers_count'] %> <h3>
 
-^ response
+  <% end %>
+
 <br>
 
 <h5>Directions</h5>
